@@ -1,0 +1,43 @@
+.contact-us {
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-us form label {
+    text-align: left;
+  }
+  
+  .contact-us input,
+  .contact-us textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-us button {
+    align-self: center;
+    margin-top: 1rem;
+  }
+  

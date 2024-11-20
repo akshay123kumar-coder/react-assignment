@@ -1,0 +1,138 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fdfdfd;
+}
+
+.homepage {
+  padding: 2rem;
+  background-color: #fff3e6;
+  text-align: center;
+}
+
+.welcome-section {
+  background-color: #ffcc99;
+  padding: 3rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2 {
+  font-size: 2.5rem;
+  color: #ff5722;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.featured-cakes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.featured-cake-item {
+  text-align: center;
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-cake-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.featured-cake-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-cake-item h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.cta-section {
+  margin-top: 2rem;
+}
+
+.cta-button {
+  background-color: #ff5722;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .featured-cakes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-section {
+    padding: 2rem;
+  }
+
+  .featured-cake-item {
+    margin-bottom: 2rem;
+    max-width: 90%;
+  }
+
+  .cta-button {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage {
+    padding: 1rem;
+  }
+
+  .welcome-section h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-section p {
+    font-size: 1rem;
+  }
+
+  .featured-cake-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
